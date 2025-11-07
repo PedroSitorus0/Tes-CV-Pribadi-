@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nama Anda — CV</title>
+ 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --primary: #0f6cff;
+      --muted: #6b7280;
+      --accent: #0ea5a4;
+      --radius: 12px;
+      --max-width: 1000px;
+      color-scheme: light;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); color:#0f172a}
+
+
+    .wrap{max-width:var(--max-width);margin:32px auto;padding:28px}
+
+   
+    .cv-card{background:var(--card);border-radius:var(--radius);box-shadow:0 6px 24px rgba(12,16,22,0.08);overflow:hidden;display:grid;grid-template-columns:320px 1fr}
+
+    
+    .sidebar{padding:28px;background:linear-gradient(180deg, rgba(15,108,255,0.05), transparent);}
+    .photo{width:120px;height:120px;border-radius:999px;overflow:hidden;margin:0 auto 18px;border:4px solid rgba(15,108,255,0.12);display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--primary),var(--accent));color:white;font-weight:700;font-size:32px}
+    .name{font-size:20px;font-weight:700;text-align:center;margin-bottom:4px}
+    .title{font-size:13px;text-align:center;color:var(--muted);margin-bottom:18px}
+
+    .section-title{font-size:12px;font-weight:700;color:var(--muted);letter-spacing:0.8px;margin:18px 0 8px}
+    .contact-list{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+    .contact-list li{font-size:14px;color:#0b1220}
+    .contact-list li small{display:block;color:var(--muted);font-size:12px}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(15,108,255,0.07);padding:6px 10px;border-radius:999px;font-size:13px}
+
+    .lang{display:flex;flex-direction:column;gap:8px}
+    .lang .bar{height:8px;background:#e6eefb;border-radius:8px;overflow:hidden}
+    .lang .bar > i{display:block;height:100%;background:var(--primary)}
+
+  
+    .main{padding:28px 34px}
+    .summary{margin-bottom:18px}
+    .headline{display:flex;align-items:center;gap:12px}
+    .headline h2{margin:0;font-size:20px}
+    .headline p{margin:0;color:var(--muted);font-size:14px}
+
+    .entry{margin-bottom:16px}
+    .entry .meta{font-size:13px;color:var(--muted);margin-bottom:6px}
+    .entry h3{margin:0;font-size:16px}
+    .entry p{margin:6px 0 0;color:#111827;line-height:1.45}
+
+    .chips{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+    .chip{padding:6px 8px;border-radius:8px;background:#f2f8ff;font-size:13px}
+
+
+    .footer{padding:14px 28px;border-top:1px dashed rgba(12,16,22,0.06);display:flex;justify-content:flex-end;color:var(--muted);font-size:13px}
+
+
+    @media (max-width:880px){
+      .cv-card{grid-template-columns:1fr;}
+      .sidebar{order:2}
+      .main{order:1}
+      .wrap{margin:12px}
+    }
+
+ 
+    @media print{
+      body{background:white}
+      .wrap{margin:0}
+      .cv-card{box-shadow:none;border-radius:0}
+      .sidebar .photo{border:0}
+      .footer{display:none}
+    }
+
+
+    a{color:var(--primary);text-decoration:none}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="cv-card" role="region" aria-label="Curriculum Vitae">
+
+    
+      <aside class="sidebar">
+        <div class="photo" aria-hidden="false">
+          
+          <img src="1724Nanami-Hiromachi-Power-tkpaA5.png" alt="Pedro Armando Sitorus" style="width:100%;height:100%;object-fit:cover"/>
+        </div>
+        <div class="name">Pedro Armando Sitorus</div>
+        <div class="title">Web Developer / Back-end Developer</div>
+
+        <div class="section">
+          <div class="section-title">Kontak</div>
+          <ul class="contact-list">
+            <li>Email: <a href="pedrositorus0@gmail.com">pedrositorus0@gmail.com</a><small>email</small></li>
+            <li>Telepon: <a href="tel:">+62 857-3223-8630</a><small>nomor</small></li>
+            <li>Lokasi: <span class="muted">Bandung, Indonesia</span><small>domisili</small></li>
+           www.linkedin.com/in/pedro-armando-sitorus-69a0b8364
+          </ul>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Keahlian</div>
+          <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Photoshop</div>
+            <div class="skill">Python</div>
+            <div class="skill">Lighroom</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Bahasa</div>
+          <div class="lang">
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:13px"><span>Bahasa Indonesia</span><span class="muted">Native</span></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:13px"><span>English</span><span class="muted">Professional</span></div>
+            </div>
+          </div>
+        </div><br>
+
+      </aside>
+
+
+      <main class="main">
+        <section class="summary">
+          <div class="headline">
+            <h2>Ringkasan</h2>
+            <p class="muted">• 5+ tahun pengalaman membangun website & aplikasi web</p>
+          </div>
+          <p style="margin-top:10px">Saya seorang web developer yang fokus pada pengalaman pengguna dan performa. Berpengalaman membangun aplikasi produksi, membuat UI yang responsif, serta berkolaborasi dengan tim desain dan produk untuk mengirim fitur berkualitas.</p>
+        </section><br>
+
+        <section class="experience">
+          <div class="section-title">Pengalaman Kerja</div><br>
+
+          <article class="entry">
+            <div class="meta">2022 — Sekarang • PT Contoh Teknologi — Senior Frontend Developer</div>
+            <h3>Senior Frontend Developer</h3>
+            <p>Membangun dan memimpin tim frontend; migrasi monolith ke modul berbasis komponen; memperbaiki performance sehingga load time turun 30%.</p>
+            <div class="chips">
+              <span class="chip">React</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Performance</span>
+            </div>
+          </article><br>
+
+          <article class="entry">
+            <div class="meta">2019 — 2022 • PT Startup Kita — Frontend Developer</div>
+            <h3>Frontend Developer</h3>
+            <p>Mengembangkan fitur kunci pada dashboard pengguna, bekerja sama erat dengan tim backend dan QA.</p>
+          </article>
+        </section><br>
+
+        <section class="education">
+          <div class="section-title">Pendidikan</div>
+
+          <article class="entry">
+             <div class="meta">2022 — 2025 • SMA KP Margahayu</div>
+            <h3>SMA</h3>
+            <p>Fokus pada interaksi dan berkolaborasi dengan sesama manusia.</p>  
+            <div class="meta">2025 — Now • Universitas Contoh — S1 Teknik Informatika</div>
+            <h3>Sarjana Teknik Informatika</h3>
+            <p>Fokus pada rekayasa perangkat lunak dan interaksi manusia-komputer.</p>
+          </article>
+        </section>
+
+        <section class="projects">
+          <div class="section-title">Proyek & Portofolio</div>
+          <article class="entry">
+            <h3>Nama Proyek A</h3>
+            <div class="meta">Link: <a href="#">github.com/username/proyek-a</a></div>
+            <p>Deskripsi singkat proyek, peran Anda, dan hasil yang dicapai.</p>
+          </article>
+        </section>
+
+      </main>
+
+    </div>
+
+    
+
+    <div class="footer">Terakhir diperbarui: <strong>Oct 31, 2025</strong></div>
+   
+  </div>
+</body>
+</html>
